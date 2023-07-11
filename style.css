@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.header-logo img {
+  float: left;
+  
+}
+.logo-pc {
+  display: none;
+}
+
+ a {
+  background: green;
+
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+}
+ h2 {
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+
+ }
+ h3 {
+  margin: 0;
+  font-weight: normal;
+  
+
+ }
+ p {
+  margin: 0;
+ }
+ .hero {
+  background: skyblue;
+  background-image: url(bg.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  text-align: center;
+  padding-top: 64px; 
+ }
+ .hero img {
+  margin-top: 64px;
+ }
+ .hero a {
+  margin-top: 64px;
+ }
+ .features {
+  padding: 64px ;
+ }
+ .feature {
+  margin-top: 64px;
+ }
+ .pic {
+  text-align: center;
+ }
+ .feature p {
+  margin-top: 16px;
+ }
+ .feature h3 {
+  margin-top: 16px;
+ }
+ footer {
+  background-color: navy;
+  color: white;
+  padding: 64px;
+  text-align: center;
+ }
+ small {
+  font-size: 16px;
+ }
+ .container {
+  
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+ }
+
+
+ @media (min-width: 600px) {
+  .logo-sp {
+    display: none;
+  }
+  .logo-pc {
+    display: inline;
+  }
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+  .hero .container div {
+    flex: 1;
+  }
+  .hero img {
+    margin-top: 0;
+  }
+
+  .feature {
+    display: flex;
+    gap: 32px;
+  }
+  .pic {
+    width: 300px;
+  }
+  .lesson {
+    flex: 1;
+  }
+  .reversed {
+    flex-direction: row-reverse;
+  }
+
+ }
+ 
